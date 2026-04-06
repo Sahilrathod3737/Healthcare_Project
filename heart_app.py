@@ -40,7 +40,7 @@ def load_model():
 
 model, feature_names, scaler = load_model()
 
-st.title("❤️ HealthScope - Heart Disease Prediction")
+st.title("❤️ MedVision - Heart Disease Prediction")
 st.markdown("Predict heart disease risk using Machine Learning")
 st.markdown("---")
 
