@@ -60,7 +60,7 @@ if model is not None:
     
     with col1:
         st.subheader("Personal Information")
-        age = st.slider("Age", 20, 100, 50)
+        age = st.slider("Age", 0, 20, 100, 50)
         sex = st.selectbox("Sex", [1, 0], format_func=lambda x: "Male" if x==1 else "Female")
         
         st.subheader("Heart Metrics")
