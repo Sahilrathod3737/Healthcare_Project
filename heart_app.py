@@ -60,7 +60,8 @@ if model is not None:
     
     with col1:
         st.subheader("Personal Information")
-        age = st.slider("Age", 0, 20, 100, 50)
+       # Isme user 0 se 120 ke beech koi bhi number type kar sakta hai
+        age = st.number_input("Enter your Age", min_value=0, max_value=120, value=25, step=1)
         sex = st.selectbox("Sex", [1, 0], format_func=lambda x: "Male" if x==1 else "Female")
         
         st.subheader("Heart Metrics")
