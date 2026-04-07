@@ -1,4 +1,15 @@
 import streamlit as st
+
+# Custom CSS to hide Streamlit elements
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            #stDecoration {display:none !important;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 import pandas as pd
 import numpy as np
 import joblib
